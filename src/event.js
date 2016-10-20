@@ -14,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
         "type": DataTypes.STRING,
         "allowNull": false
       },
+      "secret": {
+        "type": DataTypes.STRING,
+        "allowNull": false
+      },
       "datetimeCreated": {
         "type": DataTypes.DATE,
         "defaultValue": Sequelize.NOW,
