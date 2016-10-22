@@ -22,6 +22,11 @@ module.exports = (sequelize, DataTypes) => {
       "totalNoOfPeople": {
         "type": DataTypes.INTEGER.UNSIGNED,
         "allowNull": false
+      },
+      "isPresent": {
+        "type": DataTypes.BOOLEAN,
+        "defaultValue": false,
+        "allowNull": false
       }
     },
     {
