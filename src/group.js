@@ -27,6 +27,15 @@ module.exports = (sequelize, DataTypes) => {
         "type": DataTypes.BOOLEAN,
         "defaultValue": false,
         "allowNull": false
+      },
+      "callCount": {
+        "type": DataTypes.INTEGER.UNSIGNED,
+        "allowNull": false,
+        "defaultValue": 0
+      },
+      "datetimeLastCalled": {
+        "type": DataTypes.DATE,
+        "allowNull": true
       }
     },
     {
