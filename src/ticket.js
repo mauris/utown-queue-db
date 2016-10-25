@@ -60,8 +60,13 @@ module.exports = (sequelize, DataTypes) => {
       "timestamps": false,
       "indexes": [
         {
-          "name": "idx_user_active_ticket",
-          "fields": ["userId", "isActive"],
+          "name": "idx_event_user_active_ticket",
+          "fields": ["eventId", "userId", "isActive"],
+          "unique": false
+        },
+        {
+          "name": "idx_event_active_group_people",
+          "fields": ["eventId", "isActive", "groupId", "noOfPeople"],
           "unique": false
         }
       ]
