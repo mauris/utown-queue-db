@@ -66,7 +66,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         {
           "name": "idx_event_active_group_people",
-          "fields": ["eventId", "isActive", "groupId", "noOfPeople"],
+          "fields": ["eventId", "isActive", "groupId", {attribute: 'noOfPeople', order: 'DESC'],
           "unique": false
         }
       ]
