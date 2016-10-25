@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
         "allowNull": false
       },
       "eventCode": {
-        "type": DataTypes.CHAR(5),
+        "type": DataTypes.CHAR(4),
         "allowNull": false
       },
       "averageWaitingTime": {
