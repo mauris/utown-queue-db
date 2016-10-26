@@ -31,6 +31,11 @@ module.exports = (sequelize, DataTypes) => {
         "type": DataTypes.DATE,
         "allowNull": false
       },
+      "datetimeCodeLastUpdated": {
+        "type": DataTypes.DATE,
+        "defaultValue": Sequelize.NOW,
+        "allowNull": false
+      },
       "minPeoplePerGroup": {
         "type": DataTypes.INTEGER.UNSIGNED,
         "allowNull": false
